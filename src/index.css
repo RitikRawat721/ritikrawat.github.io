@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import "tailwindcss";
+
+
+@layer base {
+    body{
+        @apply font-[Exo];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+
+@layer components{
+
+     .content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right, rgba(176, 20, 238, 0.8), hsla(242, 50%, 66%, 0.8)
+    )!important;
+  } 
+  
+}
+  
+
